@@ -3,6 +3,8 @@ package si.virag.fuzzydateformatter;
 import android.content.Context;
 import android.content.res.Resources;
 
+import com.andhradroid.fuzzydateformatter.R;
+
 import java.util.Calendar;
 import java.util.Date;
 

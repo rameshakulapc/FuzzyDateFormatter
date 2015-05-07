@@ -3,10 +3,10 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
 version = "1.0.0"
-group = "si.virag"
+group = "andhradroid.dev"
 
-def siteUrl = 'https://github.com/izacus/FuzzyDateFormatter'
-def gitUrl = 'https://github.com/izacus/FuzzyDateFormatter.git'
+def siteUrl = 'https://github.com/rameshakulapc/FuzzyDateFormatter'
+def gitUrl = 'https://github.com/rameshakulapc/FuzzyDateFormatter.git'
 
 android {
     compileSdkVersion 21
@@ -30,7 +30,6 @@ properties.load(project.rootProject.file('local.properties').newDataInputStream(
 bintray {
     user = properties.getProperty("bintray.user")
     key = properties.getProperty("bintray.apikey")
-
     configurations = ['archives']
     pkg {
         repo = "maven"
@@ -57,9 +56,9 @@ install {
                 }
                 developers {
                     developer {
-                        id 'izacus'
-                        name 'Jernej Virag'
-                        email 'jernej@virag.si'
+                        id 'Andhradroid'
+                        name 'Ramesh Akula'
+                        email 'ramesh.akula@paradigmcreatives.com'
                     }
                 }
                 scm {
@@ -98,3 +97,4 @@ artifacts {
 task findConventions << {
     println project.getConvention()
 }
+
